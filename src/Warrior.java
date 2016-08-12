@@ -6,7 +6,7 @@ public class Warrior extends Character implements Stats {
 		double str = 17;
 		//Level Modifier
 		if(this.charLvl > 1){
-			str = str + (str * (.1 * charLvl));
+			str = str + (str * (.15 * charLvl));
 		}
 		return str;
 	}
