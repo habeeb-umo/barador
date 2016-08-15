@@ -6,3 +6,6 @@
 /Stats.class
 /Warrior.class
 /Wizard.class
+/Character$wepType.class
+/Character$raceType.class
+/MainMenu$CLS.class

@@ -1,5 +1,10 @@
 
 public class Warrior extends Character implements Stats {
+	
+	public Warrior(){
+		//Class Weapon
+		this.classWep = wepType.AXE;
+	}
 
 	@Override
 	public double Strength() {
@@ -33,17 +38,17 @@ public class Warrior extends Character implements Stats {
 
 	@Override
 	public double Intelligence() {
-		double inx = 8;
+		double inx = 9;
 		//Level Modifier
 		if(this.charLvl > 1){
-			inx = inx + (inx * (.15 * charLvl));
+			inx = inx + (inx * (.1 * charLvl));
 		}
 		return inx;
 	}
 
 	@Override
 	public double Charisma() {
-		double chr = 12;
+		double chr = 10;
 		//Level Modifier
 		if(this.charLvl > 1){
 			chr = chr + (chr * (.1 * charLvl));

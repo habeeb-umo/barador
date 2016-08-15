@@ -1,9 +1,14 @@
 
 public class Wizard extends Character implements Stats{
-	
+		
+	public Wizard(){
+		//Class Weapon
+		this.classWep = wepType.WAND;
+	}
+
 	@Override
 	public double Strength() {
-		double str = 8;
+		double str = 9;
 		//Level Modifier
 		if(this.charLvl > 1){
 			str = str + (str * (.1 * charLvl));
@@ -43,7 +48,7 @@ public class Wizard extends Character implements Stats{
 
 	@Override
 	public double Charisma() {
-		double chr = 9;
+		double chr = 10;
 		//Level Modifier
 		if(this.charLvl > 1){
 			chr = chr + (chr * (.1 * charLvl));

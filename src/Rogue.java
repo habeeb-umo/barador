@@ -1,34 +1,34 @@
 
-public class Paladin extends Character implements Stats {
+public class Rogue extends Character implements Stats {
 	
-	public Paladin(){
+	public Rogue(){
 		//Class Weapon
-		this.classWep = wepType.MACE;
+		this.classWep = wepType.DAGGER;
 	}
 
 	@Override
 	public double Strength() {
-		double str = 16;
+		double str = 9;
 		//Level Modifier
 		if(this.charLvl > 1){
-			str = str + (str * (.15 * charLvl));
+			str = str + (str * (.1 * charLvl));
 		}
 		return str;
 	}
 
 	@Override
 	public double Dexterity() {
-		double dex = 9;
+		double dex = 17;
 		//Level Modifier
 		if(this.charLvl > 1){
-			dex = dex + (dex * (.1 * charLvl));
+			dex = dex + (dex * (.15 * charLvl));
 		}
 		return dex;
 	}
 
 	@Override
 	public double Constitution() {
-		double con = 14;
+		double con = 12;
 		//Level Modifier
 		if(this.charLvl > 1){
 			con = con + (con * (.12 * charLvl));
@@ -38,7 +38,7 @@ public class Paladin extends Character implements Stats {
 
 	@Override
 	public double Intelligence() {
-		double inx = 12;
+		double inx = 13;
 		//Level Modifier
 		if(this.charLvl > 1){
 			inx = inx + (inx * (.12 * charLvl));
@@ -55,7 +55,5 @@ public class Paladin extends Character implements Stats {
 		}
 		return chr;
 	}
-
-
 
 }

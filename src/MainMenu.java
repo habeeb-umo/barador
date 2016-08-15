@@ -1,6 +1,7 @@
+import java.io.IOException;
 import java.util.*;
 public class MainMenu {
-	public static void main(String[] args){
+	public static void main(String[] args) throws IOException,InterruptedException{
 	//Main Menu graphics	
 	System.out.printf("\t\t**Blades of Barador**\t\t\n");
 	System.out.println();
@@ -16,7 +17,8 @@ public class MainMenu {
 	//New Game Condition
 	if(answer.equals("1") || answer.equals("1.") || answer.toLowerCase().equals("new game")){
 		System.out.println("choice 1");
-		System.exit(0);
+		
+		//System.exit(0);
 	}
 	//Load Game Condition
 	if(answer.equals("2") || answer.equals("2.") || answer.toLowerCase().equals("load game")){
@@ -31,7 +33,8 @@ public class MainMenu {
 	else{
 		System.out.println("Invalid entry");
 		System.out.println("Closing...");
-		System.exit(0);
+		//System.exit(0);
+		}
 	}
-	}
+
 }

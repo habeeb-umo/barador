@@ -4,10 +4,9 @@ Assigned Wizard stat values 8/14
 Assigned Warrior stat values 8/14 
 Assigned Paladin stat values 8/14
 Began assigning Ranger stat values 8/14
-
-
+Assigned all class stat values 8/15
+Created and assigned weapon types 8/15
 
 To do:
-Assign stat values for Ranger/Druid
-Create weapon/armor proficiency interface(s)
+Create armor proficiency interface(s)
 Create inventory class
