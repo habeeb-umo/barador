@@ -3,32 +3,54 @@ public class Paladin extends Character implements Stats {
 
 	@Override
 	public double Strength() {
-		// TODO Auto-generated method stub
-		return 0;
+		double str = 16;
+		//Level Modifier
+		if(this.charLvl > 1){
+			str = str + (str * (.15 * charLvl));
+		}
+		return str;
 	}
 
 	@Override
 	public double Dexterity() {
-		// TODO Auto-generated method stub
-		return 0;
+		double dex = 9;
+		//Level Modifier
+		if(this.charLvl > 1){
+			dex = dex + (dex * (.1 * charLvl));
+		}
+		return dex;
 	}
 
 	@Override
 	public double Constitution() {
-		// TODO Auto-generated method stub
-		return 0;
+		double con = 14;
+		//Level Modifier
+		if(this.charLvl > 1){
+			con = con + (con * (.12 * charLvl));
+		}
+		return con;
 	}
 
 	@Override
 	public double Intelligence() {
-		// TODO Auto-generated method stub
-		return 0;
+		double inx = 12;
+		//Level Modifier
+		if(this.charLvl > 1){
+			inx = inx + (inx * (.12 * charLvl));
+		}
+		return inx;
 	}
 
 	@Override
 	public double Charisma() {
-		// TODO Auto-generated method stub
-		return 0;
+		double chr = 10;
+		//Level Modifier
+		if(this.charLvl > 1){
+			chr = chr + (chr * (.1 * charLvl));
+		}
+		return chr;
 	}
+
+
 
 }

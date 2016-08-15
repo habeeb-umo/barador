@@ -1,0 +1,13 @@
+Created character classes 8/14
+Created stats interface 8/14
+Assigned Wizard stat values 8/14
+Assigned Warrior stat values 8/14 
+Assigned Paladin stat values 8/14
+Began assigning Ranger stat values 8/14
+
+
+
+To do:
+Assign stat values for Ranger/Druid
+Create weapon/armor proficiency interface(s)
+Create inventory class
